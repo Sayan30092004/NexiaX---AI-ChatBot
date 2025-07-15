@@ -1,37 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NexiaX - AI Chatbot with DeepThink Mode
 
-## Getting Started
+![NexiaX Screenshot](public/screenshot.png)
 
-First, run the development server:
+NexiaX is a modern AI-powered chatbot application featuring:
+- Gemini AI integration for intelligent responses
+- Markdown rendering with syntax highlighting
+- PDF document analysis capability
+- DeepThink mode for comprehensive topic analysis
+- Responsive design for all devices
+- Dark/Light theme toggle
+- Conversation history management
 
+## Features
+
+✨ **AI-Powered Chat** - Powered by Google's Gemini AI  
+🧠 **DeepThink Mode** - In-depth analysis of complex topics  
+📄 **PDF Analysis** - Upload and extract text from PDF documents  
+📝 **Markdown Support** - Beautifully rendered markdown with code highlighting  
+🌓 **Dark/Light Theme** - Toggle between midnight and light themes  
+📱 **Mobile Optimized** - Fully responsive design  
+💬 **Conversation History** - Save and switch between conversations  
+
+## Technologies Used
+
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- Gemini AI API
+- PDF.js for PDF parsing
+- Framer Motion for animations
+- React Markdown for markdown rendering
+- Sonner for toast notifications
+- JS Confetti for celebration effects
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/nexiax-chatbot.git
+cd nexiax-chatbot
+```
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+3. Create a .env.local file in the root directory and add your Gemini API key:
+```env
+NEXT_PUBLIC_GEMINI_API_KEY=your_api_key_here
+```
+4. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Configuration
+The project requires the following configuration:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  1. Gemini API Key: Obtain from Google AI Studio and add to .env.local
+  2. PDF.js Worker: Automatically loaded from CDN in the component
+  3. Tailwind Config: Included in the project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
+```text
+nexiax-chatbot/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── (other Next.js pages)
+├── components/
+│   └── ChatBot.tsx (main component)
+├── public/
+│   └── logo.png (application logo)
+├── styles/
+│   └── globals.css
+├── package.json
+├── tailwind.config.js
+└── tsconfig.json
+```
+## Environment Variables
+The following environment variables are required:
 
-## Learn More
+  NEXT_PUBLIC_GEMINI_API_KEY - Your Google Gemini API key
 
-To learn more about Next.js, take a look at the following resources:
+## Known Issues
+PDF parsing may fail with very large files
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+DeepThink mode consumes more API tokens
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# Sayan30092004-NexiaX---AI-ChatBot" 
+Mobile performance may degrade with many conversation items
