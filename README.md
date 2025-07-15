@@ -78,7 +78,7 @@ nexiax-chatbot/
 │   ├── page.tsx
 │   └── (other Next.js pages)
 ├── components/
-│   └── ChatBot.tsx (main component)
+│   └── page(ChatBot).tsx (main component)
 ├── public/
 │   └── logo.png (application logo)
 ├── styles/
