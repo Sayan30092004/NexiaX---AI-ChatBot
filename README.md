@@ -1,7 +1,6 @@
 # NexiaX - AI Chatbot with DeepThink Mode
 
-![NexiaX Screenshot]
-(<img width="412" height="158" alt="logo" src="https://github.com/user-attachments/assets/3cd7e901-9a83-4d98-bee4-6ae93ec4f9df" />)
+<img width="412" height="158" alt="logo" src="https://github.com/user-attachments/assets/3cd7e901-9a83-4d98-bee4-6ae93ec4f9df" />
 
 NexiaX is a modern AI-powered chatbot application featuring:
 - Gemini AI integration for intelligent responses
