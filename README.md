@@ -11,6 +11,10 @@ NexiaX is a modern AI-powered chatbot application featuring:
 - Dark/Light theme toggle
 - Conversation history management
 
+
+https://github.com/user-attachments/assets/0fe1923c-10bd-42ff-81ab-8bd6dae3706a
+
+
 ## Features
 
 ✨ **AI-Powered Chat** - Powered by Google's Gemini AI  
